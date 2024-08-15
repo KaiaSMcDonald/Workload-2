@@ -21,11 +21,11 @@ pipeline {
         }
     }
 }
-         stage (“Deploy’) {
-                 steps {
-                     sh ‘’’#!/bin/bash
-                     source venv/bin/activate
-                     eb create Workload 2 —single
-                     ‘’’
-                 }
-             }
+stage ('Deploy') {
+          steps {
+              sh '''#!/bin/bash
+              source venv/bin/activate
+              eb create Workload 2 --single
+              '''
+          }
+      }

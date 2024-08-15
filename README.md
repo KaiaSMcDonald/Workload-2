@@ -115,3 +115,37 @@ After that is the <b> Function to Check the Memory Usage </b> : This section ret
 Following that is the <b> Function to Check Disk Usage </b> : This section retreives disk usage, validate disk usage, and compare the disk usage with the threshold. <br>
 Next All the resources are checked <br>
 Finally the last part of the script checks if all resources are within the threshold or exceeds the threshold. If the usage is below the threshold the script will print a message and exit with a code 0 (success). If the usage is above the threshold the script will print a message and exit with a code 1 (failure).<br>
+
+5. Jenkins Build and Test There are three stages in total the Checkout SCM, Build, and Test.
+
+The Checkout SCM stage is cloning and colleccting the git repository to start the build.
+The Build stage is where all the dependencies needed to test the logical code are downloaded and installed.
+The test stage ensures that all the functions and features for the application are working correctly.
+
+
+
+
+This is what the page looks like showing that the code successfully went through the Test stage
+
+
+
+This shows that the code went through all the stages successfully
+
+6. Install AWS CLI on the Jenkins Server
+   The following commands will successfully install AWS CLI
+   ```
+   $curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+    $unzip awscliv2.zip
+    $sudo ./aws/install
+    $aws --version
+   
+   ```
+   By installing AWS CLI within the terminal I am able to deploy this application using a AWS resource known as AWS Elastic Beanstalk. I do not need to navigate to my AWS console to access Elastic Beanstalk.
+
+
+ 7. Switch to Jenkins user 
+   Next I will switch to the Jenkins user by using the `sudo su - jenkins` will allow me to load the user environment and make any changes that will allow the code to successfully go through all the stages in Jenkins without stepping out of the terminal.
+
+8. Activate Python 
+   
+

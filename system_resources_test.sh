@@ -34,7 +34,7 @@ check_memory_usage() {
 
     MEMORY_USAGE=$(echo "scale=2; $MEMORY_USED * 100 / $MEMORY_TOTAL" | bc)
     
-    if [ "$(echo "$MEMORY_USAGE > $MEMORY_THRESHOLD" | bc)" ]; then
+    if (( "$(echo "$MEMORY_USAGE > $MEMORY_THRESHOLD" | bc)" )); then
         echo "Warning: Memory usage is above threshold: ${MEMORY_USAGE}%"
         return 1
     else

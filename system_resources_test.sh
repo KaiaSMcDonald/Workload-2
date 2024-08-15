@@ -8,8 +8,8 @@ DISK_THRESHOLD=90
 # Function to check CPU usage
 check_cpu_usage() {
     CPU_USAGE=$(top -bn1 | grep "Cpu(s)" | sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | awk '{print 100 - $1}')
-    if [ -z "$CPU_USAGE" ]; then
-        echo "Unable to retrieve CPU usage."
+    if ! [[ $CPU_USAGE =~ ^[0-9]+([.][0-9]+)?$ ]]; then
+        echo "Error: CPU usage is not a valid number: ${CPU_USAGE}"
         exit 1
     fi
 

@@ -13,7 +13,7 @@ check_cpu_usage() {
         exit 1
     fi
 
-    if [ "$(echo "$CPU_USAGE > $CPU_THRESHOLD" | bc)" ]; then
+    if (( "$(echo "$CPU_USAGE > $CPU_THRESHOLD" | bc)" )); then
         echo "Warning: CPU usage is above threshold: ${CPU_USAGE}%"
         return 1
     else

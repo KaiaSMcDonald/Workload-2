@@ -20,3 +20,9 @@ These steps will successfully allow you to take the original repository and clon
 - Underneath the "Summary" section, click on the "Security credentials" tab
 -  Scroll down to "Access keys" and click on "Create access key" <br> <br>
 (The AWS Access Keys will help grants programmatic access to AWS resources)
+
+3. Create a t2.micro EC2
+- This EC2 is what the Jenkins Server will run on and the Jenkins Server is important because it automates the development process of a application
+
+4. Create a Bash script named "system_resources_test.sh"
+- The role of this script is to check for system resources like (CPU,Memory,and Disk) and make sure it shows whether any resource exceeds a certain threshold.

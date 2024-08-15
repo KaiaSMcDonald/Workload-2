@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Define thresholds
-CPU_THRESHOLD=60
-MEMORY_THRESHOLD=60
-DISK_THRESHOLD=60
+CPU_THRESHOLD=90
+MEMORY_THRESHOLD=90
+DISK_THRESHOLD=90
 
 # Function to check CPU usage
 check_cpu_usage() {

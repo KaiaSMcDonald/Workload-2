@@ -1,10 +1,9 @@
 pipeline {
-    agent any
+  agent any
     stages {
         stage ('Build') {
             steps {
-                sh '''
-                #!/bin/bash
+                sh '''#!/bin/bash
                 python3.7 -m venv venv
                 source venv/bin/activate
                 pip install pip --upgrade
@@ -14,14 +13,15 @@ pipeline {
         }
         stage ('Test') {
             steps {
-                sh '''
-                #!/bin/bash
+                sh '''#!/bin/bash
                 chmod +x system_resources_test.sh
                 ./system_resources_test.sh
                 '''
             }
         }
-        stage ('Deploy') {
+    }
+}
+stage ('Deploy') {
             steps {
                 sh '''
                 #!/bin/bash

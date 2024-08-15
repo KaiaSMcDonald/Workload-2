@@ -146,6 +146,14 @@ This shows that the code went through all the stages successfully
  7. Switch to Jenkins user 
    Next I will switch to the Jenkins user by using the `sudo su - jenkins` will allow me to load the user environment and make any changes that will allow the code to successfully go through all the stages in Jenkins without stepping out of the terminal.
 
-8. Activate Python 
-   
+8. Activate Python Virtual Environment
+   By running the `python3 - m venv [name-of-environment]` the python environment will be successfully activated
+   - A virtual environment is used to hold a particular Python interpreter and software libraries and binaries required to support the application.The benefits of utilizing a virtual environment is that it avoids system pollution and dependency conflicts.
+
+9. Install AWS EB CLI on the Jenkins server
+   The commands needed to achieve this is  `$pip install awsebcli
+$eb --version`
+   The installation of the AWS Elastic Beanstalk will aid in the deployment of the application.
+
+10. 
 

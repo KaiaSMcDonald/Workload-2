@@ -206,7 +206,7 @@ Afterwards I ran into another issue where my CPU usage would surpass the thresho
 
 To resolve this issue I removed any where in my code that had '-eq 1'. Which essentially stop comparing the value from  the comparison expression to check and see if it equals to 1. Once I remove that piece of the code I no longer got the warning message.
 
-![Screenshot 08-15-2024](https://github.com/KaiaSMcDonald/Workload-2/blob/main/Screenshot%202024-08-15%20at%2010.56.27%20PM.png)
+![Screenshot 08-15-2024](https://github.com/KaiaSMcDonald/Workload-2/blob/main/Screenshot%202024-08-15%20at%2011.00.05%20PM.png)
 This is a example of the a part of previous code that included '-eq 1'
 
 Issue #2: Unable to successfully pass through the depoy stage in Jenkins 

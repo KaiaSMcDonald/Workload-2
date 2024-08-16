@@ -231,4 +231,5 @@ There are some issues that come with automating source code to a production envi
 
 ## Conclusion
 
+This project provides a great opportunity to understand and witness the benefits of optimizing the deployment process. It also exposes the power behind the AWs CLI tool and how it enables you to utilize different services in one space. Overall developing solutions that incorporates automation is extremely beneficial because it helps improve accuracy and decrease deployment time which are two very key components for a business.
 

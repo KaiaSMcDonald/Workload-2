@@ -151,9 +151,38 @@ This shows that the code went through all the stages successfully
    - A virtual environment is used to hold a particular Python interpreter and software libraries and binaries required to support the application.The benefits of utilizing a virtual environment is that it avoids system pollution and dependency conflicts.
 
 9. Install AWS EB CLI on the Jenkins server
-   The commands needed to achieve this is  `$pip install awsebcli
+   The commands needed to achieve this is: `$pip install awsebcli
 $eb --version`
    The installation of the AWS Elastic Beanstalk will aid in the deployment of the application.
 
-10. 
+10. Configure AWS CLI
+ The command needed to accomplish this is: `$aws configure`
+The configurations will include inputting access keys,region, and output format
+Altogteher these configurations ensure that requests to other AWS services are authenticated, CLI commands are directed to the right geographical location, and that the output is in a human readable format.
+
+11. Initialize AWS Elastic Beanstalk CLI
+The command needed to achieve this is: `eb init`
+One of the steps when initializing the AWS EB CLI is selecting "no" for code commit.
+This step is very important because it essentially will deploy the application using Elastic Beanstalk CLI commands or automation scripts.
+
+12. Add deploy stage code to Jenkinsfile
+    The code that should be added is as follows:
+    ```
+    stage ('Deploy') {
+          steps {
+              sh '''#!/bin/bash
+              source venv/bin/activate
+              eb create [enter-name-of-environment-here] --single
+              '''
+          }
+      }
+The syntax is very important! One slight error can make a huge difference in the progression of the application through the pipeline.
+
+
+Once this code is added to the Jenkinsfile then the file should be pushed to the Github repository. <br>
+
+Afterwards return back to Jenkins to complete a rebuild which should successfully reach the deploy stage.
+
+#System Design Diagram 
+
 

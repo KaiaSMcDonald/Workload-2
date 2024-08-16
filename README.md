@@ -189,4 +189,6 @@ Afterwards return back to Jenkins to complete a rebuild which should successfull
 
 This diagram displays all the stages, resources and tools used to complete the optimization of this application. It showcases the relationship between the different AWS services and what machines or environments support them.
 
+## Issues/Troubleshooting
+
 

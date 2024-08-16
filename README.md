@@ -212,6 +212,8 @@ This is a example of the a part of previous code that included '-eq 1'
 Issue #2: Unable to successfully pass through the depoy stage in Jenkins 
 After modifying the Jenkinsfile and rebuilding the pipeline I continue to run into the issue of having a failure at the deploy stage 
 
+![Screenshot 08-15-2024](https://github.com/KaiaSMcDonald/Workload-2/blob/main/Screenshot%202024-08-15%20at%2010.49.53%20PM.png)
+
 I've made several attempts to make chnages to the code in order to suceessfully pass through the deploy stage. I've also tried to look at the logs provided through jenkins to pinpoint the error but they are unavailable. Unfortunately those attempts didn't work so I will continue to do my research to find a resolution to the problem. 
 
 ## Optimization 

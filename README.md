@@ -214,7 +214,13 @@ After modifying the Jenkinsfile and rebuilding the pipeline I continue to run in
 
 ![Screenshot 08-15-2024](https://github.com/KaiaSMcDonald/Workload-2/blob/main/Screenshot%202024-08-15%20at%2010.49.53%20PM.png)
 
-I've made several attempts to make chnages to the code in order to suceessfully pass through the deploy stage. I've also tried to look at the logs provided through jenkins to pinpoint the error but they are unavailable. Unfortunately those attempts didn't work so I will continue to do my research to find a resolution to the problem. 
+I've made several attempts to make chnages to the code in order to suceessfully pass through the deploy stage. <br>
+
+I've also tried to look at the logs provided through jenkins to pinpoint the error but they are unavailable. <br>
+
+![Screenshot 08-15-2024](https://github.com/KaiaSMcDonald/Workload-2/blob/main/Screenshot%202024-08-15%20at%2010.49.53%20PM.png)
+
+Unfortunately those attempts didn't work so I will continue to do my research to find a resolution to the problem. 
 
 ## Optimization 
 

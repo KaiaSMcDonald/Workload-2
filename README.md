@@ -122,7 +122,7 @@ The Checkout SCM stage is cloning and colleccting the git repository to start th
 The Build stage is where all the dependencies needed to test the logical code are downloaded and installed.
 The test stage ensures that all the functions and features for the application are working correctly.
 
-
+![Screenshot 08-15-2024](https://github.com/KaiaSMcDonald/Workload-2/blob/main/Screenshot%202024-08-15%20at%209.32.34%20AM.png)
 
 
 This is what the page looks like showing that the code successfully went through the Test stage

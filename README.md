@@ -194,11 +194,11 @@ This diagram displays all the stages, resources and tools used to complete the o
 Issue #1: I experienced a failure at the test stage for the first build that I did through Jenkins. 
 When looking at the error message I received I noticed that the ouput of the code did not display the memory usage and the disk usage.Therefore was issue with the code that contributed to the failure I was experiencing.
 
-
 To resolve this issue I went back into the terminal and ran the code to see if I would get the same results. Once I noticed that the results were the same I modified the code. 
 
+This is the output I recieved with the old code I wrote within the "system_resources_test.sh" script
 
-This is the output I recieved with the old code I wrote within the system "system_resources_test.sh" script
+![Screenshot 08-15-2024](https://github.com/KaiaSMcDonald/Workload-2/blob/main/Screenshot%202024-08-14%20at%205.18.07%20PM.png)
 
 Afterwards I ran into another issue where my CPU usage and Memory usage would surpass the threshold and present a warning messsage even when it wasn't true. Example down below 
 

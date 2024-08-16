@@ -127,7 +127,7 @@ The test stage ensures that all the functions and features for the application a
 
 This is what the page looks like showing that the code successfully went through the Test stage
 
-
+![Screenshot 08-15-2024](https://github.com/KaiaSMcDonald/Workload-2/blob/main/Screenshot%202024-08-15%20at%209.29.09%20AM.png)
 
 This shows that the code went through all the stages successfully
 

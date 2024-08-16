@@ -191,4 +191,21 @@ This diagram displays all the stages, resources and tools used to complete the o
 
 ## Issues/Troubleshooting
 
+Issue #1: I experienced a failure at the test stage for the first build that I did through Jenkins. 
+When looking at the error message I received I noticed that the ouput of the code did not display the memory usage and the disk usage.Therefore was issue with the code that contributed to the failure I was experiencing.
+
+
+To resolve this issue I went back into the terminal and ran the code to see if I would get the same results. Once I noticed that the results were the same I modified the code. 
+
+
+This is the output I recieved with the old code I wrote within the system "system_resources_test.sh" script
+
+Afterwards I ran into another issue where my CPU usage and Memory usage would surpass the threshold and present a warning messsage even when it wasn't true. Example down below 
+
+
+To resolve this issue I removed any where in my code that had '-eq 1'. Which essentially stop comparing the value from  the comparison expression to check and see if it equals to 1. Once I remove that piece of the code I no longer got the warning message. 
+
+Issue #2: Unable to successfully pass through the depoy stage in Jenkins 
+After modifying the Jenkinsfile and rebuilding the pipeline I continue to run into the issue of having a failure at the deploy stage 
+
 

@@ -183,6 +183,10 @@ Once this code is added to the Jenkinsfile then the file should be pushed to the
 
 Afterwards return back to Jenkins to complete a rebuild which should successfully reach the deploy stage.
 
-#System Design Diagram 
+## System Design Diagram 
+
+![Screenshot 08-15-2024](https://github.com/KaiaSMcDonald/Workload-2/blob/main/Screenshot%202024-08-15%20at%205.35.00%20PM.png)
+
+This diagram displays all the stages, resources and tools used to complete the optimization of this application. It showcases the relationship between the different AWS services and what machines or environments support them.
 
 

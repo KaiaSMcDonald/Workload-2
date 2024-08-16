@@ -208,4 +208,27 @@ To resolve this issue I removed any where in my code that had '-eq 1'. Which ess
 Issue #2: Unable to successfully pass through the depoy stage in Jenkins 
 After modifying the Jenkinsfile and rebuilding the pipeline I continue to run into the issue of having a failure at the deploy stage 
 
+I've made several attempts to make chnages to the code in order to suceessfully pass through the deploy stage. I've also tried to look at the logs provided through jenkins to pinpoint the error but they are unavailable. Unfortunately those attempts didn't work so I will continue to do my research to find a resolution to the problem. 
+
+## Optimization 
+
+How is using a deploy stage in the CICD pipeline able to increase efficiency of the buisiness?
+
+The use of the deploy stage in the CI/CD pipeline has many benefits:
+1. Fast and Frequent Releases: The process of automating deployment will allow software updates to be moved to production faster. This includes faster bug fixes and release of new features.
+2. Resource Optimization: Automating deployment will reduce the time and energy staff and developers put towards manually deploying a application. There will also be a reduction in costs because the cloud resources will be utilized in a more efficient way.
+3. Reduce Risk: Automated deployments happen in a controlled environment which decreases the amount of errors or issues that may happen during a manual deployment.
+4. Scalability: Automated deployment processes are able to scale in order to manage a increase load as the business grows. Essentially ensuring that the applications and demands are meeting and satisfying the demand.
+
+What issues, if any, can you think of that might come with automating source code to a production environment? How would you address/resolve this?
+
+There are some issues that come with automating source code to a production environment which include:
+1. Security Vulnerabilities: Automated deployments can be susceptible to security vulnerabilities if proper checks aren't happening. <br>
+   Resolution- Implement security testing such as scanning into the CI/CD pipeline to detect vulnerabilities early.<br>
+   
+2. Lack of Visibility and Observation: If the proper monitoring and logging isn't implemented it will problematic to diagnose and resolve issues happening after the deployment.<br>
+   Ressolution- Implement monitoring tools such as Prometheus and Grafana to monitor and log important events.
+
+## Conclusion
+
 

@@ -200,7 +200,7 @@ This is the output I recieved with the old code I wrote within the "system_resou
 
 ![Screenshot 08-15-2024](https://github.com/KaiaSMcDonald/Workload-2/blob/main/Screenshot%202024-08-14%20at%205.18.07%20PM.png)
 
-Afterwards I ran into another issue where my CPU usage and Memory usage would surpass the threshold and present a warning messsage even when it wasn't true. Example down below 
+Afterwards I ran into another issue where my CPU usage would surpass the threshold and present a warning messsage even when it wasn't true. Example down below 
 
 
 To resolve this issue I removed any where in my code that had '-eq 1'. Which essentially stop comparing the value from  the comparison expression to check and see if it equals to 1. Once I remove that piece of the code I no longer got the warning message. 

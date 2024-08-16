@@ -218,7 +218,7 @@ I've made several attempts to make chnages to the code in order to suceessfully 
 
 I've also tried to look at the logs provided through jenkins to pinpoint the error but they are unavailable. <br>
 
-![Screenshot 08-15-2024](https://github.com/KaiaSMcDonald/Workload-2/blob/main/Screenshot%202024-08-15%20at%2010.49.53%20PM.png)
+![Screenshot 08-15-2024](https://github.com/KaiaSMcDonald/Workload-2/blob/main/Screenshot%202024-08-15%20at%207.50.01%20AM.png)
 
 Unfortunately those attempts didn't work so I will continue to do my research to find a resolution to the problem. 
 
